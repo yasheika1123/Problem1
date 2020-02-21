@@ -1,0 +1,17 @@
+---
+title: "T-Test Problem"
+author: "Your Name"
+date: "Spring, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+require(tidyverse)
+require(tigerstats)
+Ourdata <- read.csv(file="GSScsv.csv")
+```
+
+
+## Is there a difference in  average years of education (EDUC) between the those who did or did not vote in 2012 (VOTE12)?
+
