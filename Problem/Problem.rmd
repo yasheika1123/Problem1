@@ -31,11 +31,27 @@ It appears that the average number of years of education is about the same for b
 ## numerical summary  {r}
 ```{r}
 favstats(EDUC~VOTE12,data=Ourdata)
+
+
+
+
 ```
 
 Yes it is a difference
 
 ```
 ```
+## inferential   
+
+
+# Inferential  
+  
+```{r}
+t.test(EDUC~VOTE12,data=Ourdata)
+```
+
+##  Conclusion
+The p=value from the t-test is 0.005, so we reject the null hypothesis and conclude we have evidence that there is a difference between the average years of  education of those who voted in 2012 and those who did not vote in 2012
+
 
 
